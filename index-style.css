@@ -27,14 +27,10 @@ nav {
     flex-wrap: nowrap;
 }
 
-.nav-left {
-    float: center;
-    margin: 0 1.5em;
-}
-
 .nav-right{
     float: right;
     margin-right: 1.5em;
+    margin-top: 1em;
 }
 
 /* Specifies properties of navigation links text */
