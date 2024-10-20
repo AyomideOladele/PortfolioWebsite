@@ -1,0 +1,31 @@
+<!-- HTML file foramatting content for login website --> 
+<!-- Ayomide Oladele, Version: 1 --> 
+<!-- 22/03/2021 --> 
+
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <meta charset="UTF-8">
+        <title>Login To Blog</title>
+        <link href="reset.css" rel="stylesheet">
+        <link href="login-style.css" rel="stylesheet">
+    </header>
+    <body>
+        <form class="login" method="POST" action="process.php">
+          <fieldset>
+            <legend>Login</legend>
+            <p>
+              <label class="username" for="uname" >Username:</label>
+              <input type="text" placeholder="Enter Username" id="uname" required>
+            </p>
+            <p>
+              <label for="pword" >Password:</label>
+              <input type="password" placeholder="Enter Password" name="pword" required>
+            </p>
+            <p>
+              <button type="submit">Login</button>
+            </p>
+          </fieldset>
+        </form>
+    </body>
+</html>

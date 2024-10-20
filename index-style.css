@@ -1,0 +1,210 @@
+/* CSS file foramatting properties for portfolio website */
+/* Ayomide Oladele, Version: 1 */
+/* 22/03/2021 */
+
+/* Centers document text and defualts text size */
+body {
+    text-align: center; 
+    font-size: 1.1250em;
+}
+
+/* Keeps text on page in the middle */
+.wrapper {
+	margin: 0 auto; /* verticle, horizontal */
+}
+
+/* Header properties and keeps it at the top of the page*/
+header {
+	height: 6.25em;
+    width: 100%;
+    z-index: 2;
+    background-color: #2C2B30;
+    position: fixed;
+}
+
+/* Centers navigation links in header */
+nav {
+	float: both; 
+    margin-top: 2.5em;
+    flex-wrap: nowrap;
+}
+
+/* Specifies properties of navigation links text */
+nav a {
+    color: #D6D6D6;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.6em;
+	margin: 0 0.7em;
+}
+
+/* Adds hover effect on navigation links*/
+nav a:hover{
+    opacity: 0.7;
+    font-size: 0.7em;
+}
+
+/* Specifies properties of the banner image*/
+.banner {
+	width: 100%;
+    height: 90%;
+	top: 5em;
+	background-image: url("images/codingbanner.png");
+    position: fixed;
+    background-size: cover; /* Image covers background instead of repeating*/
+    background-position: center center; /* Centers background image */
+    z-index: -1;
+}
+
+/* Styles text on banner */
+.banner h1 {
+	margin-top: 8%;
+	font-size: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color:  white;
+}
+
+/* Styles main content boxes*/
+article {
+    z-index: 1;
+    border: 0.7em solid #2C2B30;
+    width: 90%;
+    height: auto;
+	position: relative;
+    top: 22em;
+    bottom: 10em;
+    background: #D6D6D6;
+	margin: 0% 4% 5%;
+}
+
+/* Styles headers */
+article h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: italic;
+	letter-spacing: 0.25em;
+	padding-top: 2em;
+	font-size: 1.5em;
+    color: #f58f7c;
+}
+
+article p {
+	padding: 2% 0em;
+	font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.875em;
+    font-size: 15px;
+}
+
+/* Specifies properties for all content containers */
+article .container p{
+    width: 80%;
+    height: 12.75em;
+}
+
+/* Unordered list specifications  */
+ul {
+    text-align: center;
+    list-style-position: inside; /* keeps bullet points with text */
+}
+
+/* ABOUT ME */
+/* Formats round profile picture */
+.profile-picture img {
+    border-radius: 50%;
+    width: 180px;
+    overflow:hidden;
+}
+/* Formats profile picture caption*/
+.profile-picture-caption{
+    color: #4F4F51;
+    font-style: italic;
+    font-size: 0.7em;
+    font-weight: bold;
+    position: absolute;
+    top: 90%;
+    left: 47%;
+    z-index: 2;
+}
+
+/* EXPERIENCE */
+/* Experience content */
+.experience-box{
+    padding: 100px;
+    height: 5em;
+    width: 75%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+/* Format of links */
+.link a:link {
+    color: #f58f7c;
+    background-color: transparent;
+    text-decoration: none;
+  }
+/* Underlines links when hovvered over */
+.link a:hover {
+    color: #f58f7c;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+/* Changes colour of visted links */
+.link a:visited{
+      color: #2C2B30;
+      background-color: transparent;
+      text-decoration: none;
+  }
+
+
+/* PORTFOLIO */
+/* Format portfolio table */
+table{
+    background-color: #4F4F51;
+    
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    /* Rounding border */
+    border: solid 1pt#D6D6D6;
+    border-spacing: 10pt;
+    border-radius: 1.5625em;
+	height: 9.375em;
+    padding: 1.25em;
+    width: 56.25em;
+}
+th{
+    color: white;
+    font-weight: lighter;
+
+}
+/* Format table row*/
+td{
+    border: solid 3pt #4F4F51;
+}
+/* Format table images*/
+td img{
+    width: 100%;
+    height: 90px;
+    object-fit: cover; /*image doesn't stretch */
+}
+
+/* FOOTER */
+/* Fixes footer to bottom of screen, outlines properties */
+.footer {
+    z-index: 2;
+    position: fixed;
+    width:100%;
+    left: 0;
+    bottom: 0;
+    background:#2C2B30;
+    height: auto;
+}
+/* Formats contact items to right of screen */
+.footer .contacts{
+    text-align: right;
+}

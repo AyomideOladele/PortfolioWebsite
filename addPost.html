@@ -1,0 +1,32 @@
+<!-- HTML file foramatting content for login website --> 
+<!-- Ayomide Oladele, Version: 1 --> 
+<!-- 22/03/2021 --> 
+
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <meta charset="UTF-8">
+        <title>Add Post</title>
+        <link href="reset.css" rel="stylesheet">
+        <link href="login-style.css" rel="stylesheet">
+    </header>
+    <body>
+        <form class="blog-post" method="POST" action="process.php">
+          <fieldset>
+            <legend>Add Blog</legend>
+            <p>
+              <input type="text" placeholder="Title" name="title" required>
+            </p>
+            <p>
+              <input type="text" class="blog-post" placeholder="Enter your text here" name="post-details" required>
+            </p>
+            <p>
+              <button type="submit">Post</button>
+            </p>
+            <p>
+              <button type="reset">Clear</button>
+            </p>
+          </fieldset>
+        </form>
+    </body>
+</html>
